@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Páginas com Variáveis CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Página com variáveis CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Conteúdo Principal</h2>
+            <p>Exemplo de conteúdo principal</p>
+        </section>
+    </main>
+    <button id="alterarTema">Alterar Tema</button>
+   
+    <footer>
+        <p>&copy;Minha Página.Todos os direitos são meus.</p>
+    </footer>
+    <script>
+        document.getElementById('alterarTema').addEventListener('click', function() {
+    document.documentElement.style.setProperty('--cor-primaria','black');
+    document.documentElement.style.setProperty('--cor-secundaria','blue');
+});
+    </script>
+</body>
+
+</html>
